@@ -1,6 +1,6 @@
-# Skill Inventory
+# Skills And Commands Inventory
 
-This inventory lists the skill folders included in the repository.
+This inventory lists the skill folders and command files included in the repository.
 
 ## Primary Domain Skills
 
@@ -74,6 +74,16 @@ This inventory lists the skill folders included in the repository.
 - `statusline`
 - `update-cli-config`
 - `update-cursor-settings`
+
+## Cursor Commands
+
+- `adapt-governance-guide.md`
+- `build-analytics-governance-bundle.md`
+- `build-finance-ai-governance-bundle.md`
+- `build-governance-bundle.md`
+- `create-governance-package.md`
+- `refresh-governance-package.md`
+- `review-governance-package.md`
 
 ## Legacy Agent Skills
 

@@ -45,6 +45,26 @@ Common target:
 %USERPROFILE%\.cursor\skills-cursor\
 ```
 
+## Install Commands
+
+Copy the command Markdown files you want from:
+
+```text
+commands\
+```
+
+to the Cursor user commands folder on the target machine:
+
+```text
+%USERPROFILE%\.cursor\commands\
+```
+
+Example target path:
+
+```text
+C:\Users\<your-user>\.cursor\commands\create-governance-package.md
+```
+
 ## Legacy Skills
 
 The `legacy-agent-skills\` folder preserves older `.agents` versions for reference. Do not install these over the primary `skills\` versions unless you specifically need the older content.
@@ -56,7 +76,9 @@ After copying the folders:
 1. Restart Cursor.
 2. Start a new chat.
 3. Ask for a task that should trigger one of the installed skills.
-4. Confirm the skill appears in the available skills list or is used by the agent.
+4. Use the command menu to confirm the installed commands are available.
+5. Confirm the skill appears in the available skills list or is used by the agent.
 
 If a skill is not recognized, confirm that the folder contains `SKILL.md` directly inside the skill folder.
+If a command is not recognized, confirm that the `.md` command file is directly inside the commands folder.
 
