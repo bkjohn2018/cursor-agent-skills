@@ -2,6 +2,11 @@
 
 Last synced from active Cursor locations on 2026-07-02.
 
+## Repository Location
+
+- Local clone: `C:\Users\brian\cursor-agent-skills`
+- GitHub: `https://github.com/bkjohn2018/cursor-agent-skills`
+
 ## Source Of Truth (Runtime)
 
 - Skills: `C:\Users\brian\.cursor\skills`
@@ -31,5 +36,5 @@ Last synced from active Cursor locations on 2026-07-02.
 
 ## Notes
 
-- `cursor-agent-skills` is gitignored by the parent `fixed-assets-subledger` repo.
+- Keep this repository at `C:\Users\brian\cursor-agent-skills` for visibility and easy access.
 - Workflow skills in `cursor-workflow-skills/` should be compared separately against `.cursor\skills-cursor` when Cursor tooling skills change.

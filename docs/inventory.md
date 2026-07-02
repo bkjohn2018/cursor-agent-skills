@@ -145,3 +145,7 @@ The active runtime copies live in:
 - `C:\Users\brian\.cursor\commands`
 
 This repository is the portable distribution package for GitHub and ZIP install.
+
+Local clone path:
+
+- `C:\Users\brian\cursor-agent-skills`

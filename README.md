@@ -2,6 +2,8 @@
 
 This repository packages reusable Cursor and agent skills, plus custom Cursor commands, as plain Markdown-first files. It is intended for simple GitHub browsing and ZIP download, especially when moving skills and commands to another machine.
 
+**Local path:** `C:\Users\brian\cursor-agent-skills`
+
 Each skill lives in its own folder and uses `SKILL.md` as the entry point. Some skills also include supporting templates, references, or SDK type files.
 
 ## Repository Layout
