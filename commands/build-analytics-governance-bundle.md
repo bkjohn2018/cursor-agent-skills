@@ -44,7 +44,7 @@ Collect these inputs first:
 5. **Define model and dashboard design**
    - Apply `dimensional-modeling` when facts, dimensions, grain, conformance, or mart design are required.
    - Apply `data-model-requirements-and-quality` and `data-model-scorecard-review` when model clarity or QA is required.
-   - Apply `finance-dashboard-design` for dashboard layout, KPI hierarchy, visual flow, filters, and drill paths.
+   - Apply `finance-dashboard-design` when the bundle includes KPI dashboard or analytics webspace design outputs that need layout, hierarchy, filters, and drill-path guidance.
 
 6. **Define controls**
    - Apply `internal-control-design` for risk-control mapping, evidence, deficiencies, and remediation when analytics support financial, compliance, or control decisions.

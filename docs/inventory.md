@@ -20,6 +20,14 @@ This inventory lists the skill folders and command files included in the reposit
 - `question-driven-data-projects`
 - `reconciliation-analytics`
 
+### Dashboard And Webspace
+
+- `dashboard-frontend-implementation`
+- `dashboard-information-architecture`
+- `dashboard-metric-semantics`
+- `dashboard-product-framing`
+- `governance-dashboard-content-model`
+
 ### Data Governance And Management
 
 - `business-glossary-management`
@@ -45,6 +53,11 @@ This inventory lists the skill folders and command files included in the reposit
 - `data-quality-controls`
 - `dimensional-modeling`
 
+### Discovery Workspace
+
+- `discovery-analyst`
+- `discovery-workspace`
+
 ### Documentation, Policy, And Communication
 
 - `architecture-ppt-deck-writing`
@@ -58,6 +71,24 @@ This inventory lists the skill folders and command files included in the reposit
 - `policy-and-standard-writing`
 - `process-and-procedure-writing`
 - `sop-writing`
+
+### System Diagnostics
+
+- `adoption-and-ownership-planning`
+- `diagnostic-scope-control`
+- `edge-diagnostics`
+- `evidence-planning`
+- `executive-diagnostic-synthesis`
+- `facilitation-design`
+- `intervention-sizing`
+- `learning-loop-design`
+- `people-process-technology-diagnostics`
+- `problem-triage`
+- `root-cause-hypothesis-testing`
+- `system-aware-diagnostic-kernel`
+- `system-diagnostic-command-reference`
+- `system-sensing`
+- `systems-failure-mode-check`
 
 ## Cursor Workflow Skills
 
@@ -77,6 +108,8 @@ This inventory lists the skill folders and command files included in the reposit
 
 ## Cursor Commands
 
+### Governance Bundles
+
 - `adapt-governance-guide.md`
 - `build-analytics-governance-bundle.md`
 - `build-finance-ai-governance-bundle.md`
@@ -84,6 +117,15 @@ This inventory lists the skill folders and command files included in the reposit
 - `create-governance-package.md`
 - `refresh-governance-package.md`
 - `review-governance-package.md`
+
+### Dashboard And Webspace
+
+- `build-dashboard-shell.md`
+- `define-dashboard-metrics.md`
+- `design-dashboard-page.md`
+- `plan-dashboard-webspace.md`
+- `review-dashboard-semantic-consistency.md`
+- `review-dashboard-ux.md`
 
 ## Legacy Agent Skills
 
@@ -95,3 +137,11 @@ These are preserved from the older `.agents\skills` location.
 - `metric-governance`
 - `sop-writing`
 
+## Sync Source
+
+The active runtime copies live in:
+
+- `C:\Users\brian\.cursor\skills`
+- `C:\Users\brian\.cursor\commands`
+
+This repository is the portable distribution package for GitHub and ZIP install.

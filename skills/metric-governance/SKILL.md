@@ -24,6 +24,9 @@ description: Governs specific metric definitions, calculation rules, ownership, 
   - ownership and approval workflow
   - traceability from metric logic to source data and controls
 
+## Complementary Skills
+- Use `dashboard-metric-semantics` when the governed metric must be translated into card status logic, thresholds, comparators, or drill behavior in a dashboard UI.
+
 ## Output Template
 ```markdown
 # Metric Governance Record

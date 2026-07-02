@@ -25,6 +25,7 @@ description: Frames analytics work around business questions, strategic objectiv
 - With `dimensional-modeling`: use question outputs to select business process and declare grain.
 - With `data-model-requirements-and-quality`: convert questions into conceptual/logical model requirements.
 - With `data-governance`: align decisions to ownership, controls, and policy constraints.
+- With `dashboard-product-framing`: turn the business question into dashboard users, decisions, and page scope.
 
 ## Output Template
 ```markdown
