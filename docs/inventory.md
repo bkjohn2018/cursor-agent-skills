@@ -90,6 +90,19 @@ This inventory lists the skill folders and command files included in the reposit
 - `system-sensing`
 - `systems-failure-mode-check`
 
+## Agents (Pilot)
+
+Subagents in `agents/`, orchestrating the skills above as a delegated team rather than one context
+applying every chained skill. Currently scoped to `build-governance-bundle` only.
+
+- `governance-bundle-orchestrator` — collects inputs, delegates phases, assembles, gates
+- `data-governance-foundation-agent` — `question-driven-data-projects`, `data-management-foundations`, `data-governance`, `metadata-and-lineage`
+- `data-quality-controls-agent` — `data-quality-controls`
+- `governance-writing-agent` — `business-glossary-management`, `metric-governance`, `governance-writing-style-guide`, `process-and-procedure-writing`, `sop-writing`, `executive-summary-writing`, `governance-ppt-deck-writing`
+- `governance-bundle-qa-agent` — adversarial check against the bundle's own quality checklist; new capability, not a wrapper around an existing skill
+
+Each specialist's roster is written as the seed of a larger cluster (see `agents/governance-bundle-orchestrator.md`'s closing note) — extend rosters in place before creating new agents when piloting additional commands.
+
 ## Cursor Workflow Skills
 
 - `babysit`
