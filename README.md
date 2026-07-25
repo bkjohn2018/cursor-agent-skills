@@ -18,6 +18,11 @@ cursor-workflow-skills/
 commands/
   Custom Cursor command Markdown files.
 
+agents/
+  Subagents (.cursor/agents format) that orchestrate skills/ and commands/ as a delegated
+  team instead of one context applying every chained skill. Pilot scope: the
+  governance-bundle-orchestrator and its three specialist agents cover build-governance-bundle.
+
 legacy-agent-skills/
   Older `.agents` copies retained for reference where they overlap with primary skills.
 
@@ -45,4 +50,6 @@ See `docs/install-from-zip.md` for detailed Windows-oriented instructions.
 - Treat `commands/` as the primary source for custom command Markdown files.
 - Treat `legacy-agent-skills/` as historical reference unless you intentionally need an older copy.
 - Keep each skill self-contained so individual folders can be downloaded or copied without a build step.
+- `agents/` is a pilot, not yet installed anywhere — copy it to `.cursor/agents/` (which does not exist on this
+  machine yet) to test it. See `agents/governance-bundle-orchestrator.md` for how the pieces fit together.
 
