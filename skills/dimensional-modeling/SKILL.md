@@ -11,6 +11,9 @@ description: Designs dimensional models using Kimball-first methods, including t
 - Requests for fact-dimension modeling.
 - Defining enterprise conformance across multiple marts.
 
+## Relationship to Other Skills
+- Use `data-profiling` first to understand the source data's structure, keys, and quality before declaring grain or designing facts/dimensions.
+
 ## Kimball-First Workflow
 1. Select the business process.
 2. Declare the grain before selecting any facts or dimensions.

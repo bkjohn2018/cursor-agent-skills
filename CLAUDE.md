@@ -18,7 +18,7 @@ cursor-workflow-skills/ 13 meta-skills for creating skills/rules/hooks/subagents
 commands/               13 Cursor slash commands, mostly thin orchestrators over skills/
 agents/                 Subagents that delegate skills/commands across a team instead of one context
                         applying every chained skill. Pilot: governance-bundle-orchestrator + 3 specialists
-                        + a QA gate, scoped to build-governance-bundle. Not yet copied to .cursor/agents/.
+                        + a QA gate, scoped to build-governance-bundle. Synced to .cursor/agents/ (verified).
 legacy-agent-skills/    Older .agents/ copies retained for reference — do not treat as current
 docs/                   inventory.md (categorized skill list), sync-status.md, install-from-zip.md
 ```
@@ -49,7 +49,7 @@ The **`description` field is the routing mechanism** — it's what an agent harn
 
 `agents/` holds subagents in the format `cursor-workflow-skills/create-subagent/SKILL.md` documents (frontmatter `name` + `description`, body = system prompt, installed to `.cursor/agents/`). This exists because commands like `build-governance-bundle` chain 12–20 skills through a single context applying them one at a time — no parallelism between independent phases, and nothing checks the assembled result before it ships.
 
-The pilot (`governance-bundle-orchestrator` + `data-governance-foundation-agent` + `data-quality-controls-agent` + `governance-writing-agent` + `governance-bundle-qa-agent`) covers `build-governance-bundle` only. Its shape, to reuse when piloting another command:
+The pilot (`governance-bundle-orchestrator` + `data-governance-foundation-agent` + `data-quality-agent` + `governance-writing-agent` + `governance-bundle-qa-agent`) covers `build-governance-bundle` only. Its shape, to reuse when piloting another command:
 
 - **One orchestrator per command family**, not per command — it reads the command/skill file for the phase plan rather than duplicating it, collects required inputs (and asks rather than guesses when one is missing), delegates phases to named specialists, runs independent phases concurrently, assembles into the skill's own output template, and gates through QA before returning to the user.
 - **Specialist agents are clustered by theme, not one-per-skill** — `data-governance-foundation-agent` alone carries 4 skills. Each specialist's roster is written as a subset of a larger intended cluster (documented in the agent file itself); extend an existing specialist's roster before creating a new agent when a new command needs a skill from a theme already covered.

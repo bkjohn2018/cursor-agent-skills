@@ -1,6 +1,6 @@
 ---
 name: financial-variance-analysis
-description: Analyzes actual-vs-plan and period-over-period financial variances with drivers, decomposition, and business interpretation. Use when finance teams need variance narratives and action-focused insights.
+description: Analyzes actual-vs-plan and period-over-period financial variances against predefined dimensions (entity, account, product, region) using standard volume/rate/mix decomposition, with business interpretation. Use when finance teams need variance narratives and action-focused insights explained against known categories. Use `predictive-model-development` instead when the explanatory grouping itself is unknown and must be discovered (e.g., clustering or segmentation to find which vendors, invoice types, or processors are driving a pattern).
 ---
 
 # Financial Variance Analysis

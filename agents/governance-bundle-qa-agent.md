@@ -41,8 +41,8 @@ specialists claim they did:
 
 ## Additional checks beyond the skill's own checklist
 
-- Every data quality rule from `data-quality-controls-agent` names both a
-  monitor and an escalation owner — flag any rule missing either.
+- Every data quality rule from `data-quality-agent` names both a monitor and
+  an escalation owner — flag any rule missing either.
 - `shall`/`must` language, if present, is scoped to actual policy/control
   statements, not narrative or summary sections (repo-wide convention — see
   `governance-writing-style-guide`).
