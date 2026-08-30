@@ -16,7 +16,7 @@ phases, delegate to specialist subagents, and assemble and gate the result.
 
 Before planning, read `commands/build-governance-bundle.md` and
 `skills/build-governance-bundle/SKILL.md` in this repository. Those files are
-the authoritative phase list, required-inputs list, and 13-section output
+the authoritative phase list, required-inputs list, and 14-section output
 template — do not re-derive or improvise a different structure. This prompt
 only adds the delegation/parallelism layer on top of what those files already
 define.
@@ -38,10 +38,11 @@ Delegate to these subagents (defined alongside this file in `agents/`):
    `data-management-foundations`, `data-governance`, and `metadata-and-lineage`.
    Run this phase first; everything downstream depends on its scope, decision
    rights, and lineage output.
-2. **`data-quality-controls-agent`** and **`governance-writing-agent`** (term
-   pass only: `business-glossary-management` + `metric-governance`) — run these
-   two **in parallel** once phase 1 completes. Neither depends on the other,
-   only on the foundation output.
+2. **`data-quality-agent`** (applies `data-quality-controls` then
+   `data-quality-assessment`, in that order, within its own phase) and
+   **`governance-writing-agent`** (term pass only: `business-glossary-management`
+   + `metric-governance`) — run these two **in parallel** once phase 1
+   completes. Neither depends on the other, only on the foundation output.
 3. **`governance-writing-agent`** (draft pass: `governance-writing-style-guide`,
    `process-and-procedure-writing`, `sop-writing`, `executive-summary-writing`,
    `governance-ppt-deck-writing`) — run after phases 1–2 converge, since drafting
@@ -54,7 +55,7 @@ metrics that weren't in the collected inputs or a prior phase's output.
 
 ## Step 3: Assemble
 
-Assemble subagent outputs into the 13-section Output Template defined in
+Assemble subagent outputs into the 14-section Output Template defined in
 `skills/build-governance-bundle/SKILL.md` (`commands/build-governance-bundle.md`
 has an 18-section variant for the full command form — use whichever the user's
 request matches). Do not reorder or drop sections; if a subagent produced
@@ -76,7 +77,7 @@ Assembly gaps found across two dry runs, now fixed here:
   doesn't cover a standalone RACI section (distinct from the roles
   subsections embedded in the Process/SOP docs) or Issue Management
   (`data-issue-management` isn't in any current specialist's roster). Do
-  this check freshly each run: for each of the 13 (or 18, command form)
+  this check freshly each run: for each of the 14 (or 18, command form)
   template sections, confirm which specialist actually produces it; any
   section with no producer gets marked "not yet drafted — no specialist
   assigned in this pilot scope" rather than silently omitted. This list will

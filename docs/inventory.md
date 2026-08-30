@@ -15,8 +15,10 @@ This inventory lists the skill folders and command files included in the reposit
 ### Analytics And Finance
 
 - `analytics-storytelling`
+- `descriptive-pattern-analysis`
 - `finance-dashboard-design`
 - `financial-variance-analysis`
+- `predictive-model-development`
 - `question-driven-data-projects`
 - `reconciliation-analytics`
 
@@ -27,6 +29,7 @@ This inventory lists the skill folders and command files included in the reposit
 - `dashboard-metric-semantics`
 - `dashboard-product-framing`
 - `governance-dashboard-content-model`
+- `pbip-build-verification`
 
 ### Data Governance And Management
 
@@ -97,7 +100,7 @@ applying every chained skill. Currently scoped to `build-governance-bundle` only
 
 - `governance-bundle-orchestrator` — collects inputs, delegates phases, assembles, gates
 - `data-governance-foundation-agent` — `question-driven-data-projects`, `data-management-foundations`, `data-governance`, `metadata-and-lineage`
-- `data-quality-controls-agent` — `data-quality-controls`
+- `data-quality-agent` — `data-quality-controls`, `data-quality-assessment` (renamed from `data-quality-controls-agent` 2026-08-02 when scope expanded)
 - `governance-writing-agent` — `business-glossary-management`, `metric-governance`, `governance-writing-style-guide`, `process-and-procedure-writing`, `sop-writing`, `executive-summary-writing`, `governance-ppt-deck-writing`
 - `governance-bundle-qa-agent` — adversarial check against the bundle's own quality checklist; new capability, not a wrapper around an existing skill
 

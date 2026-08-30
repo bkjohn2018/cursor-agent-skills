@@ -35,6 +35,7 @@ Use these quality categories as review headings:
 - Use this skill before or alongside `dimensional-modeling`.
 - Keep Kimball as default for warehouse/mart design decisions.
 - Use this skill to improve requirement quality, naming, and model readability.
+- Use `data-profiling` first to ground conceptual/logical requirements in the real structure and quality of the source data.
 
 ## Output Template
 ```markdown

@@ -4,7 +4,7 @@ description: >-
   Drafts the actual governed content for a governance bundle: glossary, metric
   definitions, style-conformant policy/process/SOP narrative, executive
   summary, and deck outline. Use for phase 2's term pass (glossary + metric
-  definitions, in parallel with data-quality-controls-agent) and phase 3's
+  definitions, in parallel with data-quality-agent) and phase 3's
   draft pass (everything else) in the governance-bundle-orchestrator pilot.
 ---
 
@@ -19,7 +19,7 @@ you're in from the orchestrator's instruction.
 Read each `skills/<name>/SKILL.md` in this repo before applying it if your
 harness does not auto-load skills.
 
-**Term pass** (runs in parallel with `data-quality-controls-agent`, after
+**Term pass** (runs in parallel with `data-quality-agent`, after
 `data-governance-foundation-agent` completes):
 1. `business-glossary-management` — define governed terms, canonical metric
    language, and approved synonyms for the domain.
@@ -35,7 +35,7 @@ harness does not auto-load skills.
    term to the glossary before moving on, don't rely on a looser "related to"
    relationship.
 
-**Draft pass** (runs after the term pass and `data-quality-controls-agent`
+**Draft pass** (runs after the term pass and `data-quality-agent`
 both complete):
 3. `governance-writing-style-guide` — apply this first, before drafting
    anything else in this pass; it sets tone, structure, and terminology rules
@@ -57,8 +57,10 @@ agent.
 
 From `data-governance-foundation-agent`: the anchoring business question,
 DAMA-DMBOK scope, governance operating model, and **canonical roles list**.
-From `data-quality-controls-agent` (draft pass only): the data quality rules
-table. From the orchestrator: domain name, audience, tone, maturity level.
+From `data-quality-agent` (draft pass only): the data quality rules table and
+the data quality assessment scorecard — the executive summary should reflect
+the assessment's go/no-go recommendation, not just list the rules. From the
+orchestrator: domain name, audience, tone, maturity level.
 
 Use the canonical roles list's exact spellings everywhere — in the process
 roles table, the SOP roles/responsibilities table, and the deck outline. Do

@@ -1,6 +1,6 @@
 ---
 name: governance-project-delivery
-description: Applies PMBOK 7-inspired project delivery discipline to finance governance, analytics, data management, and documentation initiatives. Use when planning, prioritizing, coordinating, measuring, or changing a governance workstream, skill roadmap, documentation program, dashboard initiative, data quality remediation, or analytics delivery effort. Focuses on value, stakeholders, tailoring, planning, delivery, measurement, uncertainty, change control, and closure; use specialized content and governance skills for the deliverables themselves.
+description: Applies PMBOK 7-inspired project delivery discipline to finance governance, analytics, data management, and documentation initiatives — and is also the gate that decides whether an initiative warrants governance-weight process at all. Use first, before any other delivery-flavored skill, to tailor the approach: low-criticality, exploratory, or POC/demo work should route to `discovery-analyst`, `question-driven-data-projects`, or `problem-triage` instead of a governed workstream. For work that does warrant governance, use this when planning, prioritizing, coordinating, measuring, or changing a governance workstream, skill roadmap, documentation program, dashboard initiative, data quality remediation, or analytics delivery effort. Focuses on value, stakeholders, tailoring, planning, delivery, measurement, uncertainty, change control, and closure; use specialized content and governance skills for the deliverables themselves.
 ---
 
 # Governance Project Delivery
@@ -11,6 +11,7 @@ Use this skill to manage the work. Use the other skills to produce the work prod
 
 ## When to Use
 
+- Deciding, at intake, whether a new initiative warrants governance-weight process at all — before creating any charter or backlog.
 - Building or improving a governance, documentation, analytics, or data management capability over multiple steps.
 - Creating a roadmap, backlog, charter, delivery plan, or review cadence.
 - Coordinating multiple skills or artifacts into one governed initiative.
@@ -20,6 +21,7 @@ Use this skill to manage the work. Use the other skills to produce the work prod
 
 ## Relationship to Other Skills
 
+- Use `discovery-analyst`, `question-driven-data-projects`, or `problem-triage` instead of this skill when tailoring (Step 3 below) determines the work is exploratory, POC/demo, or otherwise doesn't warrant governance-weight process.
 - Use `data-governance`, `data-management-foundations`, and `metric-governance` for governance design.
 - Use `sop-writing`, `process-and-procedure-writing`, `policy-and-standard-writing`, and `finance-documentation-lifecycle` for controlled documentation.
 - Use `dimensional-modeling`, `metadata-and-lineage`, `data-quality-assessment`, and `data-quality-controls` for data and model work.
@@ -52,9 +54,15 @@ Apply these concepts pragmatically, not bureaucratically:
    - Capture stakeholder concerns, constraints, and communication preferences.
 
 3. **Tailor the approach**
-   - Use a lightweight checklist for low-risk, single-artifact work.
-   - Use a roadmap, backlog, formal approval gates, and change log for high-risk or cross-functional work.
-   - Increase rigor when the work affects controls, financial reporting, audit evidence, governed metrics, or executive decisions.
+   - **Decide if this is governed work first**, using PMBOK's tailoring variables:
+     - *Product/deliverable*: compliance or regulatory exposure, requirements stability, security classification, whether it can ship incrementally.
+     - *Project*: how much stakeholder involvement is required, schedule constraints, funding certainty.
+     - *Organization*: governance maturity and formality expected for this kind of work.
+   - **If nothing here trips governed-work criteria** — no controls, financial reporting, audit evidence, governed metrics, or executive-decision exposure; exploratory, POC, or demo intent — **stop here and hand off** to `discovery-analyst`, `question-driven-data-projects`, or `problem-triage` instead of producing a Charter or Backlog.
+   - **Clarifier**: audience seniority alone does not trip this gate. Presenting to an executive or director is not itself "executive-decision exposure" — that criterion means a governed decision materially depends on this output (e.g., a budget reallocation, a control certification, a public disclosure). A concept check or demo shown to a director stays on the non-governed path unless a real decision rides on it.
+   - **If it does trip governed-work criteria**, scale rigor to fit:
+     - Use a lightweight checklist for low-risk, single-artifact work.
+     - Use a roadmap, backlog, formal approval gates, and change log for high-risk or cross-functional work.
 
 4. **Plan the work**
    - Define scope, out-of-scope items, milestones, dependencies, assumptions, and constraints.

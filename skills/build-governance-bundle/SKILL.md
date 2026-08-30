@@ -21,8 +21,9 @@ description: Orchestrates a complete governance package across multiple writing,
 8. Build terminology base with `business-glossary-management`.
 9. Define KPI governance with `metric-governance`.
 10. Define trust controls with `data-quality-controls`.
-11. Capture traceability using `metadata-and-lineage`.
-12. Create leadership narrative structure with `governance-ppt-deck-writing`.
+11. Score current data quality and prioritize defects with `data-quality-assessment`.
+12. Capture traceability using `metadata-and-lineage`.
+13. Create leadership narrative structure with `governance-ppt-deck-writing`.
 
 ## Required Inputs
 - Domain name
@@ -47,11 +48,12 @@ description: Orchestrates a complete governance package across multiple writing,
 6. Business glossary
 7. Metric definitions
 8. Data quality rules
-9. Metadata and lineage template
-10. Issue management procedure
-11. Adoption/training notes
-12. PPT deck outline or draft
-13. Version history/change log
+9. Data quality assessment
+10. Metadata and lineage template
+11. Issue management procedure
+12. Adoption/training notes
+13. PPT deck outline or draft
+14. Version history/change log
 
 ## Output Template
 ```markdown
@@ -88,19 +90,22 @@ description: Orchestrates a complete governance package across multiple writing,
 ## 8) Data Quality Rules
 ...
 
-## 9) Metadata and Lineage
+## 9) Data Quality Assessment
 ...
 
-## 10) Issue Management
+## 10) Metadata and Lineage
 ...
 
-## 11) Adoption and Training Notes
+## 11) Issue Management
 ...
 
-## 12) Deck Outline
+## 12) Adoption and Training Notes
 ...
 
-## 13) Version History
+## 13) Deck Outline
+...
+
+## 14) Version History
 ...
 ```
 

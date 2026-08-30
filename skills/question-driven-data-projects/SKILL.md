@@ -26,6 +26,9 @@ description: Frames analytics work around business questions, strategic objectiv
 - With `data-model-requirements-and-quality`: convert questions into conceptual/logical model requirements.
 - With `data-governance`: align decisions to ownership, controls, and policy constraints.
 - With `dashboard-product-framing`: turn the business question into dashboard users, decisions, and page scope.
+- With `data-profiling`: once scoped, understand the raw dataset before analysis begins.
+- With `descriptive-pattern-analysis`: once scoped, use for trend, cohort/category comparison, correlation, or benchmarking on already-known dimensions.
+- With `predictive-model-development`: once scoped, use when a hypothesis calls for clustering, forecasting, driver/regression modeling, or discovering an unknown grouping.
 
 ## Output Template
 ```markdown
